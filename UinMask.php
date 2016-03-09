@@ -8,7 +8,6 @@
  */
 class UinMask{
     const UIN_MAX_BYTE = 5;         // 281,474,976,710,655
-
     private static function Uin2ByteArray($uin) {
         $tmp = gmp_init($uin);
 
