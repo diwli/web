@@ -10,7 +10,6 @@ class UinMask{
     const UIN_MAX_BYTE = 5;         // 281,474,976,710,655
     private static function Uin2ByteArray($uin) {
         $tmp = gmp_init($uin);
-
         $byte_arr = array();
         for ($i=0; $i<self::UIN_MAX_BYTE; ++$i) {
             if ($i > 0) {
@@ -18,10 +17,8 @@ class UinMask{
             }
             $byte_arr[] = gmp_intval(gmp_and($tmp, 0xFF));
         }
-
         return $byte_arr;
     }
-
     private static function MaskUin($uin, $mask_arr, $encode = true) {
         if ( !is_numeric($uin) ) {
             return '';
