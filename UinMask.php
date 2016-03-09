@@ -1,13 +1,12 @@
 <?php
 /**
  * Created by JetBrains PhpStorm.
- * User: defeihe
+ * User: v_diwli
  * Date: 16-1-8
  * Time: ÏÂÎç12:33
  * To change this template use File | Settings | File Templates.
  */
 class UinMask{
-
     const UIN_MAX_BYTE = 5;         // 281,474,976,710,655
 
     private static function Uin2ByteArray($uin) {
